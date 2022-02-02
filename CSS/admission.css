@@ -1,0 +1,70 @@
+.applyPill{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 600px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.glassyCard{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    height: 350px;
+    margin-top: 10px;
+    transition: 0.4s;
+    padding: 5px;
+}
+
+.glassyCard:hover{
+    background-color: rgba(255, 255, 255, 0.45);
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.glassyCard h5, .glassyCard p{
+    text-align: center;
+}
+
+.glassyCard .material-icons{
+    margin-top: 25px;
+    font-size: 2.5rem;
+}
+
+.section .title{
+    margin: 50px 0;
+}
+
+.section .title, .section .subtitle{
+    text-align: center;
+}
+
+.section .subtitle .material-icons{
+    font-size: 2.5rem;
+}
+
+.spiritFloat{
+    position: relative;
+    width: 100%;
+    animation: spiritlyBounce 5s linear infinite;
+}
+
+/*ANIMATIONS*/
+@keyframes spiritlyBounce {
+    0% {
+        top: -20px;
+    }
+    50%  {
+        top: 30px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+
+/*RESPONSIVE STYLES*/
+@media only screen and (max-width: 768px) {
+    .applyPill{
+        width: 90vw;
+        border-radius: 15px!important;
+    }
+}

@@ -1,0 +1,135 @@
+/*MAIN HOME PAGE*/
+#landingSpace{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    text-shadow: 0px 0px 1px #ffffff;
+    background-image: url('https://lh5.googleusercontent.com/p/AF1QipOiKOjem5vRjuL5tVr0LCAlIj0Yf-AIm97akw88=w203-h152-k-no');/*('https://shc.edu.bz/wp-content/uploads/2020/08/President-BG.jpg');*/
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.lineDivider{
+    width: 300px;
+    height: 2px;
+    background-color: black;
+}
+
+#top, #middle, #bottom, #topLine, #bottomLine, #applyScroll{
+    display: none;
+}
+
+#landingText{
+    position: absolute;
+    top: 90px;
+}
+
+#landingText a{
+    font-size: 1.5rem;
+    background: var(--translucentMarron);
+    letter-spacing: 1px;
+}
+
+
+/*CALENDAR*/
+#calendar{
+    margin-top: 100vh;
+    margin-bottom: 50px;
+}
+
+#calendar .title{
+    border-bottom: 3px solid white;
+}
+
+.card{
+    height: 300px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+
+/*WHY US*/
+#whyUs{
+    text-align: center;
+    border-radius: 15px;
+    margin: 150px 0;
+}
+
+#whyUs .material-icons{
+    font-size: 4rem;
+    color: white;
+    padding: 5px;
+}
+
+#whyUs .greenIcon{
+    background: green;
+}
+
+#whyUs .redIcon{
+    background: red;
+}
+
+#whyUs .blueIcon{
+    background: blue;
+}
+
+
+/*REMARKS*/
+#remarks{
+    border-radius: 20px;
+    background: #b10000;
+    background: -webkit-linear-gradient(to right, #b10000, #190a05);
+    background: linear-gradient(to right, #b10000, #190a05);
+}
+
+#presidentSide{
+    position: relative;
+    top: -120px;
+}
+
+#presidentSide .card{
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    width: 100%;
+}
+
+
+/*APPLY*/
+#apply{
+    background-image: url('https://shc.edu.bz/wp-content/uploads/2020/07/ApplyNow.jpg');
+    background-position: 15% 30%;
+    background-size: cover;
+    height: 800px;
+}
+
+#apply .innerContainer{
+    background: var(--translucentMarron);
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    padding: 25px;
+    width: 290px;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    left: 15%;
+}
+
+
+/*ACTIVITIES*/
+#activities{
+    margin: 120px 0;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/media/logo_icon.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./CSS/academics.css">
+  <title>Academics - Sacred Heart College</title>
+</head>
+<body>
+    <!-- Computer Navbar -->
+    <nav class="mx-auto sticky-top" id="navBar">
+        <button class="btn rounded-pill mx-1 py-2 my-1 btn-outline-light" id="expandBtn"> <i class="bi bi-list-ul"></i> More </button>
+        <img src="https://shc.edu.bz/wp-content/uploads/2020/01/SHCLOGO-5-400x55.png" width="350" alt="logo">
+        <a class="btn mx-1 py-2 my-1" href="about.html">     <i class="bi bi-question-circle-fill"></i> About SHC</a>
+        <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-file-earmark-arrow-down-fill"></i> Documents
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EMl3UcnzLxlYw17RSWgMGu1nMogcto1A/view">2021 Academic Calendar</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/15x2kNFHKEXBy70c0azYcxt3GMU1NYNeA/view">Transcript</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view">Admission</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1YEWFUPSq5derm15OUf3U4A6OhE7Exb7F/view">Transfer Application Form</a></li>
+        </ul>
+        </div>
+        <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear-fill"></i> Student Service
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://moodle.shc.edu.bz/login/index.php">SHC Moodle</a></li>
+            <li><a class="dropdown-item" href="https://schedule.shc.edu.bz/">My Schedule</a></li>
+            <li><a class="dropdown-item" href="https://drive.shc.edu.bz/">My SHC Drive</a></li>
+            <li><a class="dropdown-item" href="https://mail.shc.edu.bz/" class="btn disabled" role="button" aria-disabled="true">My SHC E-mail</a></li>
+            <li><a class="dropdown-item" href="https://shjc.edu.bz/">Sacred Heart Junior College</a></li>
+        </ul>
+        </div>    
+        <a class="btn rounded-pill mx-1 py-2 my-1 active" href="academic.html">      <span class="material-icons" id="academic">&#xe80c;</span> <span class="alignTextIcon">Academic</span></a>
+        <a class="btn rounded-pill mx-1 py-2 my-1" href="admission.html">     <i class="bi bi-ticket-perferated-fill"></i> Admissions</a>
+        <a class="btn rounded-pill mx-1 py-2 my-1" href="index.html">  <i class="bi bi-house-fill"></i> Home</a>
+    </nav>
+        
+    <!-- Mobile Device Navbar -->
+    <div id="mobileNav">
+        <div class="container centerItem">
+        <a class="btn btn-lg active" href="index.html">  <i class="bi bi-house-fill mr-5"></i> Home</a>
+        <a class="btn btn-lg" href="admission.html">     <i class="bi bi-ticket-perferated-fill"></i> Admissions</a>
+        <a class="btn btn-lg" href="academic.html">      <span class="material-icons" id="academic">&#xe80c;</span> <span class="alignTextIcon">Academic</span></a>
+        <div class="dropdown">
+            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear-fill"></i> Student Service
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://moodle.shc.edu.bz/login/index.php">SHC Moodle</a></li>
+            <li><a class="dropdown-item" href="https://schedule.shc.edu.bz/">My Schedule</a></li>
+            <li><a class="dropdown-item" href="https://drive.shc.edu.bz/">My SHC Drive</a></li>
+            <li><a class="dropdown-item" href="https://mail.shc.edu.bz/" class="btn disabled" role="button" aria-disabled="true">My SHC E-mail</a></li>
+            <li><a class="dropdown-item" href="https://shjc.edu.bz/">Sacred Heart Junior College</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-file-earmark-arrow-down-fill"></i> Documents
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EMl3UcnzLxlYw17RSWgMGu1nMogcto1A/view">2021 Academic Calendar</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/15x2kNFHKEXBy70c0azYcxt3GMU1NYNeA/view">Transcript</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view">Admission</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1YEWFUPSq5derm15OUf3U4A6OhE7Exb7F/view">Transfer Application Form</a></li>
+            </ul>
+        </div>
+        <a class="btn btn-lg" href="about.html">     <i class="bi bi-question-circle-fill"></i> About SHC</a>
+        </div>
+        <button class="btn rounded-pill mx-1 py-2 my-1 btn-outline-light" id="collapseBtn"><i class="bi bi-x-circle-fill"></i> Close</button>
+    </div>
+    <!--MAIN CONTENT START-->
+
+    <!--landing-->
+    <div class="miniLanding">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <img src="./media/white_logo.png" alt="image" class="slowRotate">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="superTitle">Academics</h1>
+                <p>In order to achieve its mission, Sacred Heart College (SHC) has adapted academic policies that will assist in achieving its goal
+                  of educating the whole student – intellectually, spiritually, physically, morally and culturally. The Board of Governors, 
+                  Administration and Faculty of SHC are cognizant that we live in a rapidly changing world, a world in which our graduates will 
+                  need junior college and university education in order to compete for jobs, a world in which knowledge is constantly evolving and
+                  which will require our future graduates to know more, to think critically, and to be skilled in the use of Information and 
+                  Communications Technology.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <!--Schedule-->
+    <div class="row section">
+      <h2 class="title">Class Schedules</h2>
+      <p class="emphasis">Select Your Year, to view your schedule</p>
+      
+      <!--Filter-->
+      <div class="row classSchedule">
+        <div class="col-3">
+          <button id="1stForm" class="btn btn-primary px-4">1st Form</button>
+        </div>
+        <div class="col-3">
+          <button id="2ndForm" class="btn btn-primary px-4">2nd Form</button>
+        </div>
+        <div class="col-3">
+          <button id="3rdForm" class="btn btn-primary px-4">3rd Form</button>
+        </div>
+        <div class="col-3">
+          <button id="4thForm" class="btn btn-primary px-4">4th Form</button>
+        </div>
+      </div>
+
+      <!--frame-->
+      <div class="row">
+        <div class="col-12" id="schedule">
+          <iframe frameborder="0" src="https://schedule.shc.edu.bz/" title="Schedule"  scrolling="no" style="overflow: hidden;"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Grade System-->
+    <div class="row section">
+      <h2 class="title">Grading System</h2>
+      <p>The grade scheme with its interpretation is as follows:</p>
+
+      <!--GPA table summary-->
+      <table id="gpaTable" class="mx-auto">
+        <thead>
+          <tr>
+            <th scope="col">Percent</th>
+            <th scope="col">Letter Grade</th>
+            <th scope="col">GPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-success">
+            <td><b>90% – 100%</b></td>
+            <td><b>A</b></td> 
+            <td><b>4.00</b></td>
+          </tr>
+          <tr class="text-success">
+            <td><b>85% – 89%</b></td>
+            <td><b>B+</b></td>
+            <td><b>3.50</b></td>
+          </tr>
+          <tr class="text-success">
+            <td><b>80 – 84%</b></td>
+            <td><b>B</b></td>
+            <td><b>3.00</b></td>
+          </tr>
+          <tr class="text-warning">
+            <td>75 – 79%</td>
+            <td>C+</td>
+            <td>2.50</td>
+          </tr>
+          <tr class="text-warning">
+            <td>70 – 74%</td>
+            <td>C</td>
+            <td>2.00</td>
+          </tr>
+          <tr class="text-danger">
+            <td><b>60 – 69%</b></td>
+            <td><b>D+</b></td>
+            <td><b>1.50</b></td>
+          </tr>
+          <tr class="text-danger">
+            <td><b>Under 60%</b></td>
+            <td><b>D</b></td>
+            <td><b>1.00</b></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The calculation of the final average follows a system of weighting for each subject according to the number of credits assigned.
+         The Grade Point Average (GPA) is calculated by dividing the total value of the credit hours by the number of credit hours. 
+         Semester 1 and Semester 2 grades are averaged to obtain the final yearly grade. An example is provided below for a student 
+         in Second Form.
+      </p>
+
+      <!--Example-->
+      <div id="example" class="mx-auto">
+        <h2 class="subtitle">Example:</h2><br>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">SUBJECT</th>
+              <th scope="col">GRADE</th>
+              <th scope="col">CREDIT HRS.</th>
+              <th scope="col">VALUE</th>
+            </tr>
+          </thead>
+        </table>
+        <hr>
+        <table>
+          <tbody>
+            <tr>
+              <td>English</td>
+              <td>C</td>
+              <td>5</td>
+              <td>10.00</td>
+            </tr>
+            <tr>
+              <td>Math</td>
+              <td>B+</td>
+              <td>5</td>
+              <td>17.50</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>C+</td>
+              <td>4</td>
+              <td>10.00</td>
+            </tr>
+            <tr>
+              <td>Social Studies</td>
+              <td>D</td>
+              <td>3</td>
+              <td>3.00</td>
+            </tr>
+            <tr>
+              <td>EDPM</td>
+              <td>D+</td>
+              <td>3</td>
+              <td>4.50</td>
+            </tr>
+            <tr>
+              <td>Religion</td>
+              <td>A</td>
+              <td>3</td>
+              <td>12.00</td>
+            </tr>
+            <tr>
+              <td>Spanish</td>
+              <td>D</td>
+              <td>3</td>
+              <td>3.00</td>
+            </tr>
+            <tr>
+              <td>Art</td>
+              <td>D</td>
+              <td>2</td>
+              <td>2.00</td>
+            </tr>
+            <tr>
+              <td>Life Skills</td>
+              <td>A</td>
+              <td>2</td>
+              <td>8.00</td>
+            </tr>
+            <tr>
+              <td>Technical Drawing</td>
+              <td>A</td>
+              <td>2</td>
+              <td>8.00</td>
+            </tr>
+            <tr>
+              <td>P.E.</td>
+              <td>B</td>
+              <td>1</td>
+              <td>3.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <th colspan="2">TOTAL</th>
+            <th>33</th>
+            <th>81</th>
+          </tr>
+        </table>
+        <br><br>
+        <h4 class="emphasis">Getting the GPA:</h4>
+        <p>Divide the TOTAL VALUE (81.00) by the TOTAL CREDIT HOURS (33).</p>
+        <p>Grade Point Average, GPA = 81.00/33 = 2.455 OR C</p>
+      </div>
+    </div>
+
+
+    <!--Policy-->
+    <div class="row section">
+      <h2 class="title">Promotion & Graduation Policy</h2>
+      <p>Sacred Heart College has developed certain academic requirements for promotion but it recognizes that some students need 
+        additional assistance to meet these requirements. Therefore, it provides a mechanism through summer classes and an after-school 
+        tutorial program, which will be discussed later in this document.
+      </p>
+
+      <p><b>1.</b> A student will be deemed to have failed the school year if he/she is in any of the categories below. Such student is NOT 
+        eligible for summer school.
+      
+        <ul>
+          <li>Obtains a grade lower than C in a combination of courses whose credit hours are greater than 11. <br>
+              For example, a student who fails Math (5), English (5) and Social Studies (3) would be failing a total of 13 credits and 
+              therefore, would fail the school year.
+          </li>
+          <li>Fails Math and English.</li>
+          <li>Fails Math or English in second form and the student already failed Math or English in first form and attended summer school 
+            in first form to be promoted to second form for either Math or English.
+          </li>
+          <li>Fails Math or English or a major subject in fourth form and the student already failed Math or English or a major subject in 
+            third form and attended summer school in third form to be promoted to fourth form for either Math or English or a major subject.
+          </li>
+        </ul>
+      </p>
+
+      <p><b>2.</b> A student is deemed to have failed the school year if he/she is in any of the categories below. However, such student may take 
+        summer school.
+        <ul>
+          <li>Obtains a grade lower than C in a combination of courses whose total number of credit hours are less than 12. For example, 
+            a student who fails Math (5) and Integrated Science (4) would be failing a total of 9 credits.
+          </li>
+          <li>Fails Math or English.</li>
+          <li>Fails a major subject.</li>
+        </ul>
+      </p>
+
+      <p><b>3.</b> Upon successfully completing the same course(s) for summer classes, the student will be promoted or will be able to graduate.</p>
+
+    </div>
+  </div>
+
+    <!--MAIN CONTENT END-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="emphasis">Visit Us</h3>
+            <p>#1 Joseph Andrews Drive <br>
+              San Ignacio Cayo         <br>
+              Belize, C.A.             <br>
+              P.O. Box 163
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.1877284276584!2d
+                            -89.0762998851268!3d17.161076788214636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                            1!3m3!1m2!1s0x8f5e67132da6e9cd%3A0x18407a606f65a1d0!2sSacred%20Heart%20College%
+                            2C%20Cayo!5e0!3m2!1sen!2sbz!4v1638254295780!5m2!1sen!2sbz" 
+              width="300" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>    
+            <br>      
+          </div>
+          
+          <div class="col-lg-4">
+            <img src="./media/square_logo.png" alt="Logo" class="mx-auto">
+            <img src="https://shc.edu.bz/wp-content/uploads/2020/01/SHCLOGO-5-400x55.png" alt="logo" class="mobileFooterLogo">
+            <br>
+          </div>
+    
+          <div class="col-lg-4">
+            <h3 class="emphasis">Contact Us</h3>
+            <p>Click on any button to be redirected:</p>
+            <p>
+              <a href="tel:(+501) 824-3759" class="btn btn-dark rounded contactBtn">
+                <span class="material-icons" id="academic">&#xEAD8;</span> <span class="alignTextIcon"> (+501) 824-3759</span>
+              </a>
+            </p>
+            <p>
+              <a href="tel:(+501) 824-2102" class="btn btn-dark rounded contactBtn mb-1">
+                <span class="material-icons navIcon" id="academic">&#xE0CD;</span> <span class="alignTextIcon">(+501) 824-2102</span>
+              </a>
+              <br>
+              <a href="tel:(+501) 824-2758" class="btn btn-dark rounded contactBtn">
+                <span class="material-icons navIcon" id="academic">&#xE0CD;</span> <span class="alignTextIcon">(+501) 824-2758</span>
+              </a>
+            </p>
+            <p>
+              <a href="mailto:president@shc.edu.bz" class="btn btn-dark rounded contactBtn">
+                <span class="material-icons navIcon" id="academic">&#xE0BE;</span> <span class="alignTextIcon">president@shc.edu.bz</span>
+              </a>
+            </p>
+  
+            <p>
+              <a href="https://www.facebook.com/SacredHeartCollegeBelize/?eid=ARDh5IevuNvOFnKJILnEZ2sMqhNgNN6nZme-tCoQW1pERSz3wvJwCaZtTW0Hul-u5D9r_J5buvYlH4aI" 
+                class="btn btn-primary rounded contactBtn">
+                <i class="bi bi-facebook"></i> Facebook
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous">
+</script>
+<script src="./JS/main.js"></script>
+</html>

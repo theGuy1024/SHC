@@ -1,0 +1,276 @@
+:root {
+    --maroon: #63090b;
+    --translucentMarron: rgba(99, 9, 11, 0.702);
+    --yellowCream: #CEA335;
+    --trueGray: rgb(54, 54, 54);
+}
+
+/*GENERIC STYLES*/
+/*set default theme*/
+body{
+    background: var(--maroon);
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.superTitle{
+    padding: 0;
+    margin: 0;
+    font-size: 5.5rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.superSubtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.25rem;
+}
+
+.emphasis{
+    color: var(--yellowCream)
+}
+
+.alignTextIcon{
+    position: relative;
+    top: -6px;
+}
+
+/*center an item inside a container*/
+.centerItem{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section{
+    margin-top: 90px;
+}
+
+.miniLanding{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/*NAV BAR*/
+nav{
+    width: 95vw;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 8px;
+    background: var(--translucentMarron);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+}
+
+/*make all buttons and link be side-to-side*/
+nav img, nav a, nav button, nav .dropdown{
+    display: inline;
+}
+
+nav .dropdown-toggle{
+    position: relative;
+    top: 1px;
+}
+
+/*align the dropdown buttons*/
+nav .dropdown{
+    position: relative;
+    top: 5px;
+}
+
+/*making the buttons be on the right, while the logo be on the left*/
+#navBar a, nav button, nav .dropdown-toggle{
+    color: white;
+    float: right;
+}
+
+nav .active{
+    background: var(--translucentMarron);
+}
+
+/*hiding the more button - will be showed later*/
+#expandBtn{
+    display: none;
+}
+
+
+.dropdown-menu{
+    background: var(--maroon);
+}
+
+
+/*setting the mobile nav to be on top of all view elements, cover all screen, and adding theme translucency*/
+#mobileNav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    display: none;
+    place-items: center;
+    background: var(--maroon);
+    background: var(--translucentMarron);
+    backdrop-filter: blur(6px) saturate(180%);
+    color: white;
+}
+
+/*aligning mobile nav buttons*/
+#mobileNav a, #mobileNav .dropdown-toggle{
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+#mobileNav .dropdown-item:hover, #navBar .dropdown-item:hover{
+    background: var(--trueGray);
+}
+
+/*positioning the close button to the top right hand*/
+#collapseBtn{
+    position: absolute;
+    top: 28px;
+    right: 13px;
+}
+
+
+#scrolldown{
+    padding: 2px 7px;
+    color: white;
+    background: var(--translucentMarron);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 80vh;
+    animation: slowBounce 2s ease-in-out 6;
+}
+
+
+
+/*Video options*/
+.youtubeVideo{
+    width: 100%;
+    height: 655px;
+}
+
+
+
+/*FOOTER*/
+footer{
+    margin-top: 75px;
+    padding: 50px 10px;
+    background: var(--trueGray);
+    text-align: center;
+    /*background-image: url('https://shc.edu.bz/wp-content/uploads/2020/08/President-BG.jpg');*/
+    background-position: center;
+    background-size: cover;
+}
+
+footer .emphasis{
+    border-bottom: 2px solid var(--yellowCream);
+    font-weight: bold;
+}
+
+footer img{
+    width: 90%;
+}
+
+footer .mobileFooterLogo{
+    display: none;
+}
+
+.contactBtn{
+    width: 250px;
+}
+
+.contactBtn:nth-child(2){
+    margin-bottom: 5px;
+}
+
+.bi-facebook{
+    font-size: 1.5rem
+}
+
+/*ANIMATIONS*/
+@keyframes slowBounce {
+    0%   {top: 80vh;}
+    25%  {top: 80vh;}
+    50%  {top: 82vh;}
+    75%  {top: 80vh;}
+    100% {top: 80vh;}
+}
+
+
+
+/*RESPONSIVE STYLES*/
+@media only screen and (max-width: 1275px) {
+    #navBar a, nav .dropdown{
+        display: none;
+    }
+
+    #navBar #expandBtn{
+        display: block;
+    }
+
+    .carousel-item{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 991.99px) {
+    nav img{
+        width: 200px;
+        padding: 10px 0;
+    }
+
+    .carousel-item{
+        height: 350px;
+    }
+
+    footer iframe{
+        display: none;
+    }
+
+    footer img:first-child{
+        display: none;
+    }
+    
+    footer .mobileFooterLogo{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-item{
+        height: 225px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .superTitle{
+        font-size: 3rem;
+        font-family: 'Anton', sans-serif;
+    }
+    
+    .superSubtitle{
+        font-size: 1.5rem;
+    }
+}

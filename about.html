@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/logo_icon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/about.css">
+    <title>Admission - Sacred Heart College</title>
+</head>
+<body onload="loadAboutUs()">
+    <!-- Computer Navbar -->
+    <nav class="mx-auto sticky-top" id="navBar">
+      <button class="btn rounded-pill mx-1 py-2 my-1 btn-outline-light" id="expandBtn"> <i class="bi bi-list-ul"></i> More </button>
+      <img src="https://shc.edu.bz/wp-content/uploads/2020/01/SHCLOGO-5-400x55.png" width="350" alt="logo">
+      <a class="btn rounded-pill mx-1 py-2 my-1 active" href="about.html">     <i class="bi bi-question-circle-fill"></i> About SHC</a>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-file-earmark-arrow-down-fill"></i> Documents
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EMl3UcnzLxlYw17RSWgMGu1nMogcto1A/view">2021 Academic Calendar</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/15x2kNFHKEXBy70c0azYcxt3GMU1NYNeA/view">Transcript</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view">Admission</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1YEWFUPSq5derm15OUf3U4A6OhE7Exb7F/view">Transfer Application Form</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear-fill"></i> Student Service
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://moodle.shc.edu.bz/login/index.php">SHC Moodle</a></li>
+            <li><a class="dropdown-item" href="https://schedule.shc.edu.bz/">My Schedule</a></li>
+            <li><a class="dropdown-item" href="https://drive.shc.edu.bz/">My SHC Drive</a></li>
+            <li><a class="dropdown-item" href="https://mail.shc.edu.bz/" class="btn disabled" role="button" aria-disabled="true">My SHC E-mail</a></li>
+            <li><a class="dropdown-item" href="https://shjc.edu.bz/">Sacred Heart Junior College</a></li>
+        </ul>
+      </div>    
+      <a class="btn rounded-pill mx-1 py-2 my-1" href="academic.html">      <span class="material-icons" id="academic">&#xe80c;</span> <span class="alignTextIcon">Academic</span></a>
+      <a class="btn rounded-pill mx-1 py-2 my-1" href="admission.html">     <i class="bi bi-ticket-perferated-fill"></i> Admissions</a>
+      <a class="btn rounded-pill mx-1 py-2 my-1" href="index.html">  <i class="bi bi-house-fill"></i> Home</a>
+  </nav>
+      
+  <!-- Mobile Device Navbar -->
+  <div id="mobileNav">
+      <div class="container centerItem">
+      <a class="btn btn-lg active" href="index.html">  <i class="bi bi-house-fill mr-5"></i> Home</a>
+      <a class="btn btn-lg" href="admission.html">     <i class="bi bi-ticket-perferated-fill"></i> Admissions</a>
+      <a class="btn btn-lg" href="academic.html">      <span class="material-icons" id="academic">&#xe80c;</span> <span class="alignTextIcon">Academic</span></a>
+      <div class="dropdown">
+          <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-gear-fill"></i> Student Service
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="https://moodle.shc.edu.bz/login/index.php">SHC Moodle</a></li>
+          <li><a class="dropdown-item" href="https://schedule.shc.edu.bz/">My Schedule</a></li>
+          <li><a class="dropdown-item" href="https://drive.shc.edu.bz/">My SHC Drive</a></li>
+          <li><a class="dropdown-item" href="https://mail.shc.edu.bz/" class="btn disabled" role="button" aria-disabled="true">My SHC E-mail</a></li>
+          <li><a class="dropdown-item" href="https://shjc.edu.bz/">Sacred Heart Junior College</a></li>
+          </ul>
+      </div>
+      <div class="dropdown">
+          <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-file-earmark-arrow-down-fill"></i> Documents
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EMl3UcnzLxlYw17RSWgMGu1nMogcto1A/view">2021 Academic Calendar</a></li>
+          <li><a class="dropdown-item" href="https://drive.google.com/file/d/15x2kNFHKEXBy70c0azYcxt3GMU1NYNeA/view">Transcript</a></li>
+          <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view">Admission</a></li>
+          <li><a class="dropdown-item" href="https://drive.google.com/file/d/1YEWFUPSq5derm15OUf3U4A6OhE7Exb7F/view">Transfer Application Form</a></li>
+          </ul>
+      </div>
+      <a class="btn btn-lg" href="about.html">     <i class="bi bi-question-circle-fill"></i> About SHC</a>
+      </div>
+      <button class="btn rounded-pill mx-1 py-2 my-1 btn-outline-light" id="collapseBtn"><i class="bi bi-x-circle-fill"></i> Close</button>
+  </div>
+  <!--MAIN CONTENT START-->
+
+
+  <!--landing-->
+  <div class="miniLanding">
+    <div class="container" id="neumContainer">
+      <div class="innerContainer">
+        <div class="row">
+          <div class="col-md-6 innerContainerImg">
+              <img src="https://shc.edu.bz/wp-content/uploads/2020/04/AA.jpg" alt="Sacred Heart Campus back in the days">
+              <div class="shortDetails">
+                <table class="mx-auto">
+                  <tr>
+                    <th>Date</th>
+                    <th>Students</th>
+                  </tr>
+                  <tr>
+                    <td>1960</td>
+                    <td>0000</td>
+                  </tr>
+                </table>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.1877284276584!2d
+                        -89.0762998851268!3d17.161076788214636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                        1!3m3!1m2!1s0x8f5e67132da6e9cd%3A0x18407a606f65a1d0!2sSacred%20Heart%20College%
+                        2C%20Cayo!5e0!3m2!1sen!2sbz!4v1638254295780!5m2!1sen!2sbz" 
+              width="90%" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>  
+            <br>
+            <hr>
+            <h2 class="subtitle">History</h2>
+            <p>Founded in 1960 by Monsignor Facundo Castillo, Sacred Heart College is a grant-aided high school owned and managed by 
+              the Roman Catholic Diocese of Belize and Belmopan. In 2007, the school was incorporated and its corporate powers are 
+              invested in a Board of Governors whose responsibility is to determine policies for the efficient and responsible 
+              management of the institution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--School's Mission, Vision, Values-->
+  <div class="container aboutSchool">
+    <!--Mission-->
+    <div class="row section" id="mission">
+      <div class="col-md-6">
+        <img id="missionImg" src="./media/mission.png" alt="mission - target">
+        <img class="aboutImgs" src="./media/mission.png" alt="mission - target">
+      </div>
+      <div class="col-md-6 my-auto">
+        <h1 class="title">Our <br> Mission</h1>
+        <p>The mission of SHJC, guided by the Catholic ethos, is to offer quality education through relevant, dynamic and innovative 
+          programs and courses that foster and strengthen the spiritual, intellectual, cultural, physical, and psychological aspects of 
+          the human being thus creating a conducive environment for catalysts of positive change.
+        </p>
+      </div>
+    </div>
+
+    <!--Vision-->
+    <div class="row" id="vision">
+      <div class="col-md-6 my-auto">
+        <img class="aboutImgs" src="./media/vision.png" alt="mission - target">
+        <h1 class="title">Our <br> Vision</h1>
+        <p>To be the learning community of first choice that holistically transforms its members and positively impacts Belize.</p>
+      </div>
+      <div class="col-md-6">
+        <img id="visionImg" src="./media/vision.png" alt="mission - target">
+      </div>
+    </div>
+
+    <!--Values-->
+    <div class="row" id="values">
+      <div class="col-md-6 ">
+        <img class="mx-auto my-auto" id="valueImg" src="./media/values.png" alt="mission - target">
+        <img class="aboutImgs" src="./media/values.png" alt="mission - target">
+      </div>
+      <div class="col-md-6 my-auto">
+        <h1 class="title">Our <br> Values</h1>
+        <p> <b> <span class="emphasis">Quality: </span> </b>
+          SHC demands quality from all the members of its learning community. 
+        </p>
+        <p> <b> <span class="emphasis">Accountability: </span> </b>
+          SHC practices and upholds transparency and accountability.
+        </p>
+        <p> <b> <span class="emphasis">Respect: </span> </b>
+          SHC demands respect: self respect and respect towards each other despite religious, political, racial, gender, social status 
+          or national origin.        
+        </p>
+        <p> <b> <span class="emphasis">Innovation: </span> </b>
+          SHC demands quality from all the members of its learning community. 
+        </p>
+        <p> <b> <span class="emphasis">Service: </span> </b>
+            SHC expects volunteerism and service from all members of its learning community.Leadership: SHC cultivates awareness and 
+            constructive pro-activity.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+
+  <!--School's Prayer-->
+  <div class="container section prayer">
+    <h1 class="title">SCHOOL PRAYER</h1>
+    <p>O God, to You I pray each day
+      <br>To guide us safely on our way;
+      <br>To know you truly as we say,
+      <br>Make us to grow in faith and skill;
+      <br>Teach to always do Thy will;
+      <br>To keep you ever as a part
+      <br>Of this our beloved school, Sacred Heart.
+    </p>
+    <h3 class="emphasis">Amen</h3>
+  </div>
+
+  <br>
+
+  <!--Song-->
+  <div class="container section song">
+    <h1 class="title">SCHOOL SONG</h1>
+    <p>Sacred Heart College marches onward up the hills of hope,
+      <br>Faces all to sunward, feet against the slope;
+      <br>What the goal or end is, time has yet to guess;
+      <br>But where’er a friend is trust a friend to press!
+      <br>Panting on and up, in the teeming early dew,
+      <br>Bearing all the old, while they mount toward the new.
+    </p>
+    <p>Sacred Heart College marches onward,
+      <br>New worlds to find;
+      <br>Sacred Heart College marches onward,
+      <br>Who will lag behind?
+    </p>
+    <p>Great the might of number, weak the work of one;
+      <br>One may fall and slumber; toils the army on.
+      <br>Well it knows the tune it marches with to fame;
+      <br>Unit after unit we can sing the same!
+      <br>Higher up the height, where the loyal feet have led,
+      <br>Chime the voices in with the echo of their tread.
+    </p>
+    <p class="emphasis">Composed and Written by 
+      <br> Rev. Fr. Noel Leslie
+    </p>
+  </div>
+
+  <br>
+  <hr>
+
+  <!--Facilities-->
+  <div class="container section">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1 class="title slidingCol my-auto">SCHOOL <br> FACILITIES</h1>
+      </div>
+      <div class="col-sm-8">
+        <p>Sacred Heart High School is an institution that consist of 28 classrooms that seats 36 students in every room. Each classroom has
+          a mounted projector and speaker in it, with white boards.
+        </p>
+
+        <!--Sport Facilities-->
+        <div class="row section">
+          <h2 class="subtitle">Sports Facilities</h2>
+          <p>Sacred Heart College fosters a strong sporting program in the region and the investment of on-campus facilities is a testament to 
+            this philosophy. Our sporting facilities were designed to cater for sporting events, but also to ensure that our students have a 
+            sporting space to develop healthy and active lifestyles.
+          </p>
+          <p>
+            At Sacred Heart College, we focus on providing a holistic education, allowing our students to explore their talents, develop their 
+            skills and enhance their abilities, whilst enjoying an active, healthy lifestyle; sport and physical education play a central role 
+            in our curriculum. 
+          </p>
+          <p>
+            Each and every one of our students must engage in physical education and extra-curricular sports activities, regardless of their 
+            level of skill or experience. For this reason, we ensure that all activities are held within a nurturing, encouraging and inclusive
+            environment. Our facilities include:
+          </p>
+          <div class="rotaryFacilities"></div>
+    
+          <!--Science Laboratories-->
+          <div class="row section">
+            <h2 class="subtitle">Science Laboratories</h2>
+            <p>Science is one of the most popular course track at our institution, hence it is imperative that the school invests in 
+              up-to-date equipment and laboratories. These support structures complement the learning process to ensure that our students 
+              are afforded a hands-on experience in the science labs as they merge theory with practical experiences. Our school has a 
+              Biology lab, a Physics lab and a Chemistry lab that is stacked with the necessary equipment and chemicals for science sessions.
+            </p>
+          </div>
+    
+          <!--ICT Facilities-->
+          <div class="row section">
+            <h2 class="subtitle">ICT Facilities</h2>
+            <p>Sacred Heart College makes every effort to usher our students into the new technological age by ensuring that students are 
+              technologically engaged with up-to-date computer hardware and software. We have 3 computer labs that has 40 computers in each 
+              lab, along with 8 computers in our Student Lounge and an additional 6 computers in the Print Center. All computer labs have 
+              internet access, air-condition and printing capabilities. There is currently about 200 computers on campus.
+            </p>
+          </div>
+    
+          <!--Music Room-->
+          <div class="row section">
+            <h2 class="subtitle">Music Room</h2>
+            <p>The school has one music classroom for the teaching of Music. The music room has in musical instruments for a marching band
+               along with keyboards, guitars, bases and other music technology equipment.
+            </p>
+          </div>
+    
+          <!--Technical Drawing Room-->
+          <div class="row section">
+            <h2 class="subtitle">Technical Drawing Room</h2>
+            <p>Sacred Heart College has a technical drawing (TD) room for TD sessions. The room is equipped with TD instruments for students
+              to use to do constructions.
+            </p>
+          </div>
+    
+          <!--Art Room-->
+          <div class="row section">
+            <h2 class="subtitle">Art Room</h2>
+            <p>There is an art room on campus for the teaching of art sessions. The room is designed in a way to cater for creative thinking
+              and is equipped for artistic projects, such as painting and drawing.
+            </p>
+          </div>
+    
+          <!--Recreational Areas-->
+          <div class="row section">
+            <h2 class="subtitle">Recreational Areas</h2>
+            <p>These attractive shaded areas and quiet areas dotted around the campus are fitted out with picnic tables that are situated 
+              under shady trees to allow students to meet with friends, snack and relax in calm surroundings.
+            </p>
+          </div>
+    
+          <!--Cafeteria -->
+          <div class="row section">
+            <h2 class="subtitle">Cafeteria </h2>
+            <p>There is a school-managed cafeteria on campus that provides breakfast, lunch, snacks and drinks to our students, faculty and 
+              staff. Hot meals are prepared everyday for students and teachers.
+            </p>
+          </div>
+    
+          <!--Eating Area-->
+          <div class="row section">
+            <h2 class="subtitle">Eating Area</h2>
+            <p>A huge outdoor eating area is situated adjacent to the school’s cafeteria. The facility has about 40 picnic tables which 
+              allow students to enjoy their meals and snacks in a pleasant setting.
+            </p>
+          </div>
+    
+          <!--Student Lounge -->
+          <div class="row section">
+            <h2 class="subtitle">Student Lounge </h2>
+            <p>A student lounge is situated beside the Office of Student Services. It is furnished with a sofa set, computers for students 
+              to use after class time, microwaves for students to warm their lunches and a white-board for tutorial sessions.
+            </p>
+          </div>
+    
+          <!--Counselling Room & Waiting Area -->
+          <div class="row section">
+            <h2 class="subtitle">Counselling Room & Waiting Area </h2>
+            <p>Sacred Heart College has two counsellors who share a counselling room. Counselling sessions are conducted in this facility 
+              and there is also a waiting area for students who are feeling sick for the day.
+            </p>
+          </div>
+    
+          <!--Print Center -->
+          <div class="row section">
+            <h2 class="subtitle">Print Center </h2>
+            <p>The Print Center is available for both teachers and students. Photocopy of materials is done here, and students can use the 
+              Print Center to print documents, bind documents and prepare documents to submit for their classes. Text books can be rented 
+              or purchased at the Print Center and students can also buy stationary from here. Student IDs are printed at the Print Center 
+              and the main intercom system is located at the Print Center for announcements made.
+            </p>
+          </div>
+    
+          <!--Campus Ministry Room & Chapel-->
+          <div class="row section">
+            <h2 class="subtitle">Campus Ministry Room & Chapel</h2>
+            <p>There is a campus ministry room that hosts the members in the campus ministry who plans spiritual activities for the students
+               and the school. There is also a chapel that can host 60 persons that is used for services that are conducted for both students 
+               and teachers.
+            </p>
+          </div>
+    
+          <!--Conference Room -->
+          <div class="row section">
+            <h2 class="subtitle">Conference Room </h2>
+            <p>The school has a conference room located inside the auditorium that can seat approximately 25 persons for meetings, 
+              conferences and presentations. The conference room is air conditioned with a mounted projector and white board screen.
+            </p>
+          </div>
+    
+          <!--Student Restrooms -->
+          <div class="row section">
+            <h2 class="subtitle">Student Restrooms </h2>
+            <p>There is a restroom unit located inside the auditorium with 8 units in each of the male and female restrooms. There is also 
+              an additional restroom unit with 10 units in each of the male and female rooms.
+            </p>
+          </div>
+    
+          <!--Security Cameras -->
+          <div class="row section">
+            <h2 class="subtitle">Security Cameras </h2>
+            <p>The campus is monitored by 32 security cameras with monitors in the IT room, President’s office and security booths.</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+
+  <!--MAIN CONTENT END-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3 class="emphasis">Visit Us</h3>
+          <p>#1 Joseph Andrews Drive <br>
+            San Ignacio Cayo         <br>
+            Belize, C.A.             <br>
+            P.O. Box 163
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.1877284276584!2d
+                          -89.0762998851268!3d17.161076788214636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                          1!3m3!1m2!1s0x8f5e67132da6e9cd%3A0x18407a606f65a1d0!2sSacred%20Heart%20College%
+                          2C%20Cayo!5e0!3m2!1sen!2sbz!4v1638254295780!5m2!1sen!2sbz" 
+            width="300" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>    
+          <br>      
+        </div>
+        
+        <div class="col-lg-4">
+          <img src="./media/square_logo.png" alt="Logo" class="mx-auto">
+          <img src="https://shc.edu.bz/wp-content/uploads/2020/01/SHCLOGO-5-400x55.png" alt="logo" class="mobileFooterLogo">
+          <br>
+        </div>
+  
+        <div class="col-lg-4">
+          <h3 class="emphasis">Contact Us</h3>
+          <p>Click on any button to be redirected:</p>
+          <p>
+            <a href="tel:(+501) 824-3759" class="btn btn-dark rounded contactBtn">
+              <span class="material-icons" id="academic">&#xEAD8;</span> <span class="alignTextIcon"> (+501) 824-3759</span>
+            </a>
+          </p>
+          <p>
+            <a href="tel:(+501) 824-2102" class="btn btn-dark rounded contactBtn mb-1">
+              <span class="material-icons navIcon" id="academic">&#xE0CD;</span> <span class="alignTextIcon">(+501) 824-2102</span>
+            </a>
+            <br>
+            <a href="tel:(+501) 824-2758" class="btn btn-dark rounded contactBtn">
+              <span class="material-icons navIcon" id="academic">&#xE0CD;</span> <span class="alignTextIcon">(+501) 824-2758</span>
+            </a>
+          </p>
+          <p>
+            <a href="mailto:president@shc.edu.bz" class="btn btn-dark rounded contactBtn">
+              <span class="material-icons navIcon" id="academic">&#xE0BE;</span> <span class="alignTextIcon">president@shc.edu.bz</span>
+            </a>
+          </p>
+
+          <p>
+            <a href="https://www.facebook.com/SacredHeartCollegeBelize/?eid=ARDh5IevuNvOFnKJILnEZ2sMqhNgNN6nZme-tCoQW1pERSz3wvJwCaZtTW0Hul-u5D9r_J5buvYlH4aI" 
+              class="btn btn-primary rounded contactBtn">
+              <i class="bi bi-facebook"></i> Facebook
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous">
+</script>
+<script src="./JS/main.js"></script>
+</html>

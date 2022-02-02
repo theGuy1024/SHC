@@ -1,0 +1,134 @@
+/*History main container*/
+#neumContainer{
+    background: rgb(219, 219, 219);
+    box-shadow: 7px 7px 15px rgb(41, 41, 41), inset -10px -10px 10px rgb(170, 170, 170), inset 7px 7px 8px rgb(255, 255, 255);
+    color: black;
+    border-radius: 30px;
+    text-align: left;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.innerContainer{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*old, black and white image container*/
+.innerContainerImg{
+    width: 50%;
+    overflow: hidden;
+}
+
+/*actual old, black and white image*/
+#neumContainer img{
+    width: 100%;
+    transition: 1s;
+}
+
+
+/*enlarges the image when hovered*/
+#neumContainer img:hover{
+    transform: scale(1.55);
+}
+
+/*stats below the image*/
+.shortDetails{
+    padding: 30px 0;
+    background: var(--yellowCream);
+    text-align: center;
+}
+
+/*stats*/
+.shortDetails table{
+    width: 80%;
+}
+
+/*hide mission, vision, values - mobile version images*/
+.aboutImgs{
+    display: none;
+}
+
+/*image placement - desktop/laptop screen version*/
+#mission img, #vision img{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+
+#values img{
+    position: relative;
+    top: 100px;
+    width: 90%;
+    z-index: -1;
+}
+
+/*center align*/
+.song, .prayer{
+    text-align: center;
+    line-height: 1.8;
+}
+
+/*school facilities column*/
+.slidingCol{
+    position: sticky;
+    top: 30vh;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .shortDetails{
+        padding: 120px 0px;
+    }    
+}
+
+@media only screen and (max-width: 992px){
+    .shortDetails{
+        padding: 195px 0px;
+    }  
+}
+
+@media only screen and (max-width:767px) {
+    .innerContainerImg{
+        width: 100%;
+    }
+
+    .shortDetails{
+        padding: 19px 0px;
+        margin-bottom: 20px;
+    }  
+
+
+
+    #visionImg, #missionImg,#valueImg{
+        display: none;
+    }
+    
+    .aboutSchool{
+        text-align: center;
+    }
+
+    .aboutImgs{
+        display: block;
+    }
+
+    #mission img, #vision img{
+        position: relative;
+        width: 100%;
+        transform: rotate(0deg);
+    }
+
+    #values img{
+        position: relative;
+        top: 0;
+        width: 90%;
+    }
+
+    .slidingCol{
+        font-size: 30px;
+    }
+}

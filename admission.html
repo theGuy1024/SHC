@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/media/logo_icon.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./CSS/admission.css">
+  <title>Admission - Sacred Heart College</title>
+</head>
+<body>
+    <!-- Computer Navbar -->
+    <nav class="mx-auto sticky-top" id="navBar">
+        <button class="btn rounded-pill mx-1 py-2 my-1 btn-outline-light" id="expandBtn"> <i class="bi bi-list-ul"></i> More </button>
+        <img src="https://shc.edu.bz/wp-content/uploads/2020/01/SHCLOGO-5-400x55.png" width="350" alt="logo">
+        <a class="btn mx-1 py-2 my-1" href="about.html">     <i class="bi bi-question-circle-fill"></i> About SHC</a>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-file-earmark-arrow-down-fill"></i> Documents
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EMl3UcnzLxlYw17RSWgMGu1nMogcto1A/view">2021 Academic Calendar</a></li>
+              <li><a class="dropdown-item" href="https://drive.google.com/file/d/15x2kNFHKEXBy70c0azYcxt3GMU1NYNeA/view">Transcript</a></li>
+              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view">Admission</a></li>
+              <li><a class="dropdown-item" href="https://drive.google.com/file/d/1YEWFUPSq5derm15OUf3U4A6OhE7Exb7F/view">Transfer Application Form</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-gear-fill"></i> Student Service
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="https://moodle.shc.edu.bz/login/index.php">SHC Moodle</a></li>
+              <li><a class="dropdown-item" href="https://schedule.shc.edu.bz/">My Schedule</a></li>
+              <li><a class="dropdown-item" href="https://drive.shc.edu.bz/">My SHC Drive</a></li>
+              <li><a class="dropdown-item" href="https://mail.shc.edu.bz/" class="btn disabled" role="button" aria-disabled="true">My SHC E-mail</a></li>
+              <li><a class="dropdown-item" href="https://shjc.edu.bz/">Sacred Heart Junior College</a></li>
+          </ul>
+        </div>    
+        <a class="btn rounded-pill mx-1 py-2 my-1" href="academic.html">      <span class="material-icons" id="academic">&#xe80c;</span> <span class="alignTextIcon">Academic</span></a>
+        <a class="btn rounded-pill mx-1 py-2 my-1 active" href="admission.html">     <i class="bi bi-ticket-perferated-fill"></i> Admissions</a>
+        <a class="btn rounded-pill mx-1 py-2 my-1" href="index.html">  <i class="bi bi-house-fill"></i> Home</a>
+    </nav>
+        
+    <!-- Mobile Device Navbar -->
+    <div id="mobileNav">
+        <div class="container centerItem">
+        <a class="btn btn-lg active" href="index.html">  <i class="bi bi-house-fill mr-5"></i> Home</a>
+        <a class="btn btn-lg" href="admission.html">     <i class="bi bi-ticket-perferated-fill"></i> Admissions</a>
+        <a class="btn btn-lg" href="academic.html">      <span class="material-icons" id="academic">&#xe80c;</span> <span class="alignTextIcon">Academic</span></a>
+        <div class="dropdown">
+            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear-fill"></i> Student Service
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://moodle.shc.edu.bz/login/index.php">SHC Moodle</a></li>
+            <li><a class="dropdown-item" href="https://schedule.shc.edu.bz/">My Schedule</a></li>
+            <li><a class="dropdown-item" href="https://drive.shc.edu.bz/">My SHC Drive</a></li>
+            <li><a class="dropdown-item" href="https://mail.shc.edu.bz/" class="btn disabled" role="button" aria-disabled="true">My SHC E-mail</a></li>
+            <li><a class="dropdown-item" href="https://shjc.edu.bz/">Sacred Heart Junior College</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-file-earmark-arrow-down-fill"></i> Documents
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1EMl3UcnzLxlYw17RSWgMGu1nMogcto1A/view">2021 Academic Calendar</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/15x2kNFHKEXBy70c0azYcxt3GMU1NYNeA/view">Transcript</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view">Admission</a></li>
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1YEWFUPSq5derm15OUf3U4A6OhE7Exb7F/view">Transfer Application Form</a></li>
+            </ul>
+        </div>
+        <a class="btn btn-lg" href="about.html">     <i class="bi bi-question-circle-fill"></i> About SHC</a>
+        </div>
+        <button class="btn rounded-pill mx-1 py-2 my-1 btn-outline-light" id="collapseBtn"><i class="bi bi-x-circle-fill"></i> Close</button>
+    </div>
+
+    <!--MAIN CONTENT START-->
+
+    
+    <!--landing-->
+    <div class="miniLanding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./media/admission_cover.png" alt="image" class="spiritFloat">
+                </div>
+                <div class="col-md-6 my-auto">
+                  <h1 class="superTitle">Apply to SHC</h1>
+                  <p class="subtitle">A small step for a bigger future!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Download File-->
+    <div class="applyPill rounded-pill mx-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="title">Apply Now</p>
+          </div>
+          <div class="col-md-6">
+            <a href="https://drive.google.com/file/d/1iAsCpvojTjAhTJQrhYZOXJkJUSvo6ptv/view" class="btn btn-dark btn-lg rounded-pill px-5 py-2 mt-3">
+               <i class="bi bi-file-earmark-arrow-down-fill"></i>
+               Get Application
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--Fees-->
+      <div class="row section">
+        <p class="title">School Fees (Estimation)</p>
+        <p class="emphasis">Note: Non-Belizeans pay an additional fee</p>
+
+        <div class="col-lg-3">
+          <div class="glassyCard">
+            <p>
+              <span class="material-icons">&#xE400;</span>
+              <br> 1st Form
+            </p>
+            <h5>$930.00</h5>
+            <hr>
+            <ul>
+              <li>Flat Fee</li>
+              <li>General Courses</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-3">
+          <div class="glassyCard">
+            <p>
+              <span class="material-icons">&#xE401;</span> <br>
+              2nd Form
+            </p>
+            <h5>$930.00</h5>
+            <hr>
+            <ul>
+              <li>Flat Fee</li>
+              <li>General Courses</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-3">
+          <div class="glassyCard">
+            <p>
+              <span class="material-icons">&#xE3FB;</span> <br>
+              3rd Form
+            </p>
+            <h5>$970.00 - $1110.00</h5>
+            <hr>
+            <ul>
+              <li>$970.00 - Business </li>
+              <li>$970.00 - General Studies</li>
+              <li>$970.00 - One Science</li>
+              <li>$1040.00 - Two Science</li>
+              <li>$1110.00 - Three Science </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="glassyCard">
+            <p>
+              <span class="material-icons">&#xE3FD;</span> <br>
+              4th Form
+            </p>
+            <h5>$970.00 - $1110.00</h5>
+            <hr>
+            <ul>
+              <li>$970.00 - Business </li>
+              <li>$970.00 - General Studies</li>
+              <li>$970.00 - One Science</li>
+              <li>$1040.00 - Two Science</li>
+              <li>$1110.00 - Three Science </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Policies-->
+      <div class="row section">
+        <h1 class="title">POLICIES</h1>
+        <div class="col-lg-3">
+          <h2 class="subtitle"> 
+            <i class="bi bi-ticket-perferated-fill"></i> 
+            <br> 
+            Admission Policy
+          </h2>
+        </div>
+        <div class="col-lg-9">
+          <p>Sacred Heart College seeks students who are desirous of earning a high quality, well-rounded Christian education that will
+            provide them with a sound foundation for responsible citizenship, and prepare them for tertiary education. Prospective 
+            applicants must be highly motivated and dedicated students who are willing to work towards achieving SHC’s academic 
+            standards and who will abide by its rules governing student conduct.
+          </p>
+          <p>
+            Interested students must fill and meet the requirements in the application form and must have demonstrated good conduct in
+            primary school.
+         </p>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-lg-3">
+          <h2 class="subtitle"> 
+            <i class="bi bi-arrow-left-right"></i> 
+            <br> 
+            Student Transfer Policy
+          </h2>
+        </div>
+        <div class="col-lg-9">
+          <p>Student transfers will be considered depending on the academic performance, disciplinary record and availability of space.
+            SHC will not accept any transfer student who was suspended or expelled from their former school for substance abuse, on or 
+            off-campus fighting, stealing or disrespect to school authorities. SHC will also not accept transfer students who have been 
+            placed on the First Offenders program. Finally, SHC will not re-admit students who were previously expelled from SHC for any 
+            of the above reasons.
+          </p>
+          <h4>Policy regarding Transfer Students and Late Transfers</h4>
+          <ol>
+            <li>Students desiring to transfer from another school must take a Test in English and Math.</li>
+            <li>Students desiring to transfer into fourth form must also take a Test in the subject areas they wish to take, which is 
+              business or science.</li>
+            <li>Transfer students are placed on academic and disciplinary probation, unless they have a GPA of 3.0 or higher and have 
+              an excellent disciplinary recommendation from their former school.</li>
+            <li>Students must be prepared to complete department requirements and CXC requirements if they are planning on taking any 
+              CXC examinations. If they are transferring into Fourth Form, they must submit all their SBAs and Science Lab books.</li>
+          </ol>
+        </div>
+      </div>
+
+
+      <!--Scholarships-->
+      <div class="row section">
+        <h1 class="title">SCHOLARSHIPS</h1>
+        <div class="col-lg-3">
+          <h2 class="subtitle">
+            <span class="material-icons">&#xE80C;</span> 
+            <br> 
+            Academic Scholarship
+          </h2>
+        </div>
+        <div class="col-lg-9">
+          <p>Each scholarship is valued at half the cost of a child’s registration fee. This scholarship is awarded to 6 students. For 
+            an incoming student to qualify, he or she must have scored above 85 on the PSE. For a student going into second, third or 
+            fourth form, they must have a GPA of 3.75 or above to apply. An academic committee comprised of teachers will then review 
+            the applications, to decide on the candidates who will receive the scholarship. A student must maintain a GPA of 3.75 or 
+            above to keep the scholarship. Application forms can be picked up at the office of Student Services. Deadline for submission 
+            is May 28, and forms should be dropped off at the Student Affairs Vice Principal.
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-lg-3">
+          <h2 class="subtitle">
+            <span class="material-icons">&#xEA23;</span> 
+            <br> 
+            Sports Scholarship
+          </h2>
+        </div>
+        <div class="col-lg-9">
+          <p>Each scholarship is valued at half the cost of a child’s registration fee, and it is awarded to 3 male and 3 female 
+            athletes. To qualify for this scholarship, an incoming first form student must have scored above 60 on the PSE, while a 
+            second, third and fourth form student must have a GPA of 2.5 of above. The student must be able to play two of the 5 
+            sporting disciplines. These include basketball, volleyball, football, softball or track and field. The scholarship is 
+            awarded on an annual basis. The sports director, along with teachers in the sports committee will form the selection 
+            committee for these scholarships. Application forms can be picked up at the office of Student Services. Deadline for 
+            submission is May 28, and forms should be dropped off at the Office of Student Services.
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="col-lg-3">
+          <h2 class="subtitle">
+            <span class="material-icons">&#xEA67;</span> 
+            <br> 
+            Work Scholarship
+          </h2>
+        </div>
+        <div class="col-lg-9">
+          <p>Recipients of this scholarship will be required to assist the school with community service. A total of 14 work scholarships
+             will be distributed for the school year. Students must submit an application form, which will then be reviewed by a
+             committee. Each scholarship is valued at half the cost of a child’s registration fee. Application forms can be picked up 
+             at the office of Student Services. Deadline for submission is May 28, and forms should be dropped off at the Office of 
+             Student Services.
+        </div>
+      </div>
+    </div>
+
+    <!--MAIN CONTENT END-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="emphasis">Visit Us</h3>
+            <p>#1 Joseph Andrews Drive <br>
+              San Ignacio Cayo         <br>
+              Belize, C.A.             <br>
+              P.O. Box 163
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.1877284276584!2d
+                            -89.0762998851268!3d17.161076788214636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                            1!3m3!1m2!1s0x8f5e67132da6e9cd%3A0x18407a606f65a1d0!2sSacred%20Heart%20College%
+                            2C%20Cayo!5e0!3m2!1sen!2sbz!4v1638254295780!5m2!1sen!2sbz" 
+              width="300" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>    
+            <br>      
+          </div>
+          
+          <div class="col-lg-4">
+            <img src="./media/square_logo.png" alt="Logo" class="mx-auto">
+            <img src="https://shc.edu.bz/wp-content/uploads/2020/01/SHCLOGO-5-400x55.png" alt="logo" class="mobileFooterLogo">
+            <br>
+          </div>
+    
+          <div class="col-lg-4">
+            <h3 class="emphasis">Contact Us</h3>
+            <p>Click on any button to be redirected:</p>
+            <p>
+              <a href="tel:(+501) 824-3759" class="btn btn-dark rounded contactBtn">
+                <span class="material-icons" id="academic">&#xEAD8;</span> <span class="alignTextIcon"> (+501) 824-3759</span>
+              </a>
+            </p>
+            <p>
+              <a href="tel:(+501) 824-2102" class="btn btn-dark rounded contactBtn mb-1">
+                <span class="material-icons navIcon" id="academic">&#xE0CD;</span> <span class="alignTextIcon">(+501) 824-2102</span>
+              </a>
+              <br>
+              <a href="tel:(+501) 824-2758" class="btn btn-dark rounded contactBtn">
+                <span class="material-icons navIcon" id="academic">&#xE0CD;</span> <span class="alignTextIcon">(+501) 824-2758</span>
+              </a>
+            </p>
+            <p>
+              <a href="mailto:president@shc.edu.bz" class="btn btn-dark rounded contactBtn">
+                <span class="material-icons navIcon" id="academic">&#xE0BE;</span> <span class="alignTextIcon">president@shc.edu.bz</span>
+              </a>
+            </p>
+  
+            <p>
+              <a href="https://www.facebook.com/SacredHeartCollegeBelize/?eid=ARDh5IevuNvOFnKJILnEZ2sMqhNgNN6nZme-tCoQW1pERSz3wvJwCaZtTW0Hul-u5D9r_J5buvYlH4aI" 
+                class="btn btn-primary rounded contactBtn">
+                <i class="bi bi-facebook"></i> Facebook
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous">
+</script>
+<script src="./JS/main.js"></script>
+</html>

@@ -1,0 +1,102 @@
+body{
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+.slowRotate{
+    position: relative;
+    width: 70%;
+    animation: clockRotate 4s linear infinite;
+}
+
+.miniLanding p{
+    text-align: justify;
+}
+
+.classSchedule button{
+    text-align: center;
+}
+
+.classSchedule{
+    margin-bottom: 20px;
+}
+
+#schedule{
+    border-radius: 10px;
+    display: none;
+    height: 1200px;
+    overflow: hidden;
+}
+
+#schedule iframe{
+    background: wheat;
+    width: 100%;
+    height: 1200px;
+    pointer-events: none
+}
+
+
+#gpaTable{
+    border-radius: 20px;
+    width: 80%;
+    background: var(--trueGray);
+    text-align: center;
+    /*background-image: linear-gradient(green 30%, orange 60%, rgb(255, 0, 0) 90%);*/
+    margin-bottom: 60px;
+}
+
+#gpaTable th{
+    border-bottom: 1px solid white;
+}
+
+
+th, td{
+    width: 25%;
+}
+
+#example table td, #example table th, #gpaTable th, #gpaTable td{
+    padding: 8px 0;
+}
+
+
+#example{
+    margin-top: 60px;
+    background: var(--trueGray);
+    color: white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 80vw;
+    text-align: center;
+}
+
+#example table{
+    width: 100%;
+}
+
+
+ul li{
+    width: 85%;
+    margin-left: 40px;
+}
+
+
+@keyframes clockRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(20deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
